@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+</head>
+
+<body>
+    <header class="header bg-black b--white-10 flex justify-between">
+        <h1 class="f3 lh-title white items-center no-underline">Django Books</h1>
+    </header>
+
+    <div class="ma5">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+
+</html>
+
