@@ -16,7 +16,9 @@ def homepage(request):
         return redirect("book_list")
     return render(request, "home.html")   
     
-    
+@login_required    
 def book_list(request):
     books = Book.objects.all().order_by("date")
     return render(request, "book_list.html", {"books": books})
+
+    
