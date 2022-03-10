@@ -15,7 +15,6 @@ def homepage(request):
     if request.user.is_authenticated:
         return redirect("book_list")
     return render(request, "home.html")   
-    # return render(request, "book_list.html")   
     
     
 def book_list(request):
